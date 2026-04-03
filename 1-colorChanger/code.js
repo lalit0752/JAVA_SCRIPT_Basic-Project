@@ -1,10 +1,11 @@
 console.log("lalit")
 const buttons = document.querySelectorAll('.button');
+// to select all buttons
 const body = document.querySelector('body');
 
-buttons.forEach(function (button) {
+buttons.forEach(function (button) {  //foreach for nodelist
   console.log(button);
-  button.addEventListener('click', function (e) {
+  button.addEventListener('click', function (e) { //listen all the occur events
     console.log(e);
     console.log(e.target);
     if (e.target.id === 'grey') {
